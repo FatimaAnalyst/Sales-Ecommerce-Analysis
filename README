@@ -1,0 +1,44 @@
+# Sales & E-commerce Analysis
+
+Analysis of 2,000 e-commerce orders using **Python, Pandas, and Matplotlib** to find where revenue and profit come from.
+
+## Business Questions
+- How much revenue and profit did the business make?
+- Which regions, products, and categories perform best?
+- How do sales change over time?
+- Which customer segments and categories drive returns?
+
+## Dataset
+- 2,000 orders, 17 columns (order date, customer segment, product, category, region, quantity, price, discount, net amount, profit, payment method, return status)
+- Synthetic dataset created for practice
+- Data quality check: no missing values, no duplicates; order dates converted from text to date type
+
+## Key Findings
+1. **Overall:** 2,000 orders generated ₹4.93 crore revenue and ₹75.87 lakh profit (15.4% margin). Average order value: ₹24,646.
+2. **Regions:** East leads with ₹1.09 crore (22% of revenue); South is lowest at ₹86.7 lakh. Revenue is spread fairly evenly across regions.
+3. **Products:** Laptop, Smartphone, and Tablet together bring in about 71% of revenue; Laptop alone brings in about 39%.
+4. **Profit:** Electronics generates about 58% of total profit (₹44.3 lakh).
+5. **Customers:** New customers account for about 50% of revenue, Returning 38%, and VIP about 12%.
+6. **Trend:** Monthly revenue ranged from ₹33 lakh (February) to ₹49 lakh (April), with another rise in October-November.
+7. **Returns:** Overall return rate is 5.25%. Accessories (6.2%) and Sportswear (6.1%) are highest; Furniture (4.4%) is lowest.
+8. **Payments:** Credit Card and UPI make up about 60% of orders; only 10% use Cash on Delivery.
+
+## Charts
+![Revenue by Region](revenue_by_region.png)
+![Profit by Category](profit_by_category.png)
+![Monthly Revenue Trend](monthly_revenue.png)
+
+## Tools Used
+- Python
+- Pandas (data cleaning, groupby analysis)
+- Matplotlib (charts)
+
+## How to Run
+1. Install libraries: `pip install pandas matplotlib`
+2. Keep `analysis.py` and `sales_ecommerce_dataset.csv` in the same folder
+3. Run: `python analysis.py`
+
+## Files
+- `analysis.py`: full analysis script
+- `sales_ecommerce_dataset.csv`: dataset
+- `*.png`: saved charts
